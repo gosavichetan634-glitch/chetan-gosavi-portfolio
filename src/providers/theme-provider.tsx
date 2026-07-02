@@ -1,14 +1,30 @@
+"use client";
+
 import type { ReactNode } from "react";
+
+import { ThemeProvider as NextThemesProvider } from "next-themes";
 
 type ThemeProviderProps = Readonly<{
   children: ReactNode;
 }>;
 
 /**
- * Placeholder provider for the future theme system.
- * Keep this boundary stable so theme state can be introduced
- * without refactoring the root layout tree.
+ * Central theme boundary for the application.
+ * The provider persists user preference, supports system theme
+ * resolution, and injects the pre-hydration script required to
+ * minimize theme flash on first paint.
  */
 export function ThemeProvider({ children }: ThemeProviderProps) {
-  return children;
+  return (
+    <NextThemesProvider
+      attribute="data-theme"
+      defaultTheme="system"
+      enableSystem
+      enableColorScheme
+      disableTransitionOnChange
+      storageKey="portfolio-theme"
+    >
+      {children}
+    </NextThemesProvider>
+  );
 }
