@@ -1,0 +1,13 @@
+:root {
+  /* Semantic motion tokens */
+  --motion-duration-theme: var(--motion-duration-normal);
+  --motion-duration-hover: var(--motion-duration-fast);
+  --motion-duration-enter: var(--motion-duration-normal);
+  --motion-duration-exit: var(--motion-duration-fast);
+  --motion-duration-overlay: var(--motion-duration-slow);
+
+  --motion-easing-standard: var(--motion-ease-standard);
+  --motion-easing-emphasized: var(--motion-ease-emphasized);
+  --motion-easing-enter: var(--motion-ease-decelerate);
+  --motion-easing-exit: var(--motion-ease-accelerate);
+}

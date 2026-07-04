@@ -1,0 +1,29 @@
+:root {
+  /* Semantic typography tokens */
+  --font-family-sans: var(--font-sans), var(--font-family-sans-fallback);
+  --font-family-mono: var(--font-mono), var(--font-family-mono-fallback);
+
+  --font-size-body-sm: var(--font-size-sm);
+  --font-size-body-md: var(--font-size-base);
+  --font-size-body-lg: var(--font-size-lg);
+
+  --font-size-label: var(--font-size-xs);
+  --font-size-caption: var(--font-size-2xs);
+
+  --font-size-heading-4: var(--font-size-xl);
+  --font-size-heading-3: var(--font-size-2xl);
+  --font-size-heading-2: var(--font-size-3xl);
+  --font-size-heading-1: var(--font-size-4xl);
+  --font-size-display: var(--font-size-5xl);
+
+  --font-weight-body: var(--font-weight-regular);
+  --font-weight-label: var(--font-weight-medium);
+  --font-weight-heading: var(--font-weight-semibold);
+  --font-weight-display: var(--font-weight-bold);
+
+  --line-height-body: var(--line-height-normal);
+  --line-height-reading: var(--line-height-relaxed);
+  --line-height-heading: var(--line-height-snug);
+  --line-height-display: var(--line-height-tight);
+  --line-height-compact: var(--line-height-snug);
+}
