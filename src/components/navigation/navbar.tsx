@@ -1,5 +1,6 @@
-import { NavbarLogo } from "./navbar-logo";
+import { NavbarActions } from "./navbar-actions";
 import { NavbarLinks } from "./navbar-links";
+import { NavbarLogo } from "./navbar-logo";
 import {
   navbarContainerStyle,
   navbarStyle,
@@ -10,7 +11,17 @@ export function Navbar() {
     <header style={navbarStyle}>
       <div style={navbarContainerStyle}>
         <NavbarLogo />
-        <NavbarLinks />
+
+        <div
+          style={{
+            display: "flex",
+            alignItems: "center",
+            gap: "2rem",
+          }}
+        >
+          <NavbarLinks />
+          <NavbarActions />
+        </div>
       </div>
     </header>
   );
